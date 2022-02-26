@@ -10,6 +10,14 @@ namespace GBHWEssential
     {
         static void Main(string[] args)
         {
+            DateTime currentDate = DateTime.Now;
+
+            Console.Write("Введите имя пользователя: ");
+            string userName = Console.ReadLine();
+
+            Console.WriteLine($"Привет, {userName}, сегодня {currentDate.Date.ToShortDateString()} г.");
+
+            Console.ReadKey();
         }
     }
 }
